@@ -1,4 +1,79 @@
 .footer{
     background-color: $color-secondary;
     grid-column: full-start / full-end;
+    padding: 8rem;
+}
+
+.nav{
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 2rem;
+    align-items: center;
+
+    &__link:link,
+    &__link:visited{
+        font-size: 1.4rem;
+        color: #fff;
+        text-decoration: none;
+        font-family: $font-display;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1.5rem;
+        display: block;
+        transition: all .2s;
+        -webkit-transition: all .2;
+        -moz-transition: all .2;
+        -ms-transition: all .2;
+        -o-transition: all .2;
+
+    }
+
+    &__link:hover,
+    &__link:active{
+        background-color:rgba($color: #fff,$alpha: .05);
+        transform: translateY(-3px);
+        -webkit-transform: translateY(-3px);
+        -moz-transform: translateY(-3px);
+        -ms-transform: translateY(-3px);
+        -o-transform: translateY(-3px);
+    }
+}
+
+.copyright{
+    font-size: 1.4rem;
+    color: $color-grey-light-2;
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 70%;
+
+
+    &__link:link,
+    &__link:visited{
+        color: $color-grey-light-2;
+
+        background-color:rgba($color: #fff,$alpha: .05);
+
+        text-decoration: none;
+        transition: all .2s;
+        -webkit-transition: all .2;
+        -moz-transition: all .2;
+        -ms-transition: all .2;
+        -o-transition: all .2;
+    }
+
+    &__link:hover,
+    &__link:active{
+        color: $color-primary;
+        font-family: $font-display;
+
+        transform: translateY(-3px);
+        -webkit-transform: translateY(-3px);
+        -moz-transform: translateY(-3px);
+        -ms-transform: translateY(-3px);
+        -o-transform: translateY(-3px);
+    }
 }
