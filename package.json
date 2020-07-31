@@ -1,5 +1,5 @@
 {
-  "name": "nexter",
+  "name": "Nexter_Homes",
   "version": "1.0.0",
   "description": "Nexter Website",
   "main": "index.js",
@@ -12,7 +12,7 @@
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
-  "author": "Kajal Singh",
+  "author": "Azeez Abdulrahman Adewale",
   "license": "ISC",
   "dependencies": {
     "watch": "^1.0.2"
